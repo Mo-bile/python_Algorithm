@@ -69,12 +69,32 @@ def merge(list1, list2):
             merged_list.append(list1[i])
             i += 1
 
+
     if i == len(list1):
         merged_list += list2[j:]
     elif j == len(list2):
         merged_list += list1[i:]
 
     return merged_list
+
+# 재작성 (0926) -> 틀림
+#     merge_list = []
+#
+#     i, j = 0, 0
+#     while i < len(list1) and j < len(list2):
+#         if list1[i] > list2[j]:
+#             merge_list.append(list2[j])
+#             j += 1
+#         elif list1[i] < list2[j]:
+#             merge_list.append(list1[i])
+#             i += 1
+#
+#     if i == len(list1):
+#         merge_list += list2[j:]
+#     if j == len(list2):
+#         merge_list += list1[i:]
+#
+#     return merge_list
 
 
 
