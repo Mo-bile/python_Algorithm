@@ -130,5 +130,3 @@ list2 = [6, 1, 2, 6, 3, 5, 4]
 pivot_index2 = partition(list2, 0, len(list2) - 1)
 print(list2)
 print(pivot_index2)
-
-
