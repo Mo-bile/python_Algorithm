@@ -1,15 +1,15 @@
 def fib_memo(n, cache):
-    # basecase
+    # baseCase
     if n <= 2 :
         # return n
         return 1
 
-    # cache[n]이 존재하는 경우
     # cache[n]이 존재하지 않는 경우
-    if (cache.get(n)):
+    if cache.get(n) is None:
+        
 
-
-    # fib_memo()
+    # cache[n]이 존재하는 경우
+    else:
 
 
 
@@ -19,6 +19,11 @@ def fib(n):
     fib_cache = {}
 
     return fib_memo(n, fib_cache)
+
+
+    # fib_memo()
+
+
 
 
 # 테스트 코드
