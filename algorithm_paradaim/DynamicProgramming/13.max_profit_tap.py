@@ -1,15 +1,15 @@
 def max_profit(price_list, count):
     # profit_table = [price_list[0], price_list[1]] # 그냥 0만 너을 때와 어떤차이?
-    profit_table = [price_list[0]] #같은 값이 두번 들어가버림
+    profit_table = [price_list[0]] #같은 값이 두번 들어가버림 (a)
     # profit_table = [0]
 
     for i in range(1, count + 1):
-        if i < len(price_list): # count -> i 로 변경
+        if i < len(price_list): # count -> i 로 변경 (b)
             profit = price_list[i]
         else:
             profit = 0
 
-        for j in range(1, i // 2 + 1): # i // 2 + 1 로 변경
+        for j in range(1, i // 2 + 1): # i // 2 + 1 로 변경 (c)
             tmp = profit_table[j] + profit_table[i - j]
             profit = max(profit, tmp)
         profit_table.append(profit)
