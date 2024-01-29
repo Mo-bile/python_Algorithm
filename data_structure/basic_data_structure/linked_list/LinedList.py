@@ -51,6 +51,43 @@ class LikedList:
         else: # 링크드 리스트가 비어 있지 않은 경우
             self.tail.next = new_node
             self.tail = new_node
+    def insert_after(self, previous_node, data):
+        """링크드 리스트 주어진 노드 뒤 삽입 연산 메소드"""
+        new_node = Node(data)
+
+        # 가장 마지막 순서 삽입
+        if previous_node is self.tail:
+            self.tail.next = new_node
+            self.tail = new_node
+
+        else: # 두 노드 사이에 삽입
+            new_node.next = previous_node.next
+            previous_node.next = new_node
+
+    def delete_after(self, previous_node):
+        """링크드 리스트 삭제연산. 주어진 노드 뒤 노드를 삭제한다"""
+        data = previous_node.next.data
+
+        # 지우려는 노드가 tail 일때
+        if previous_node.next is self.tail:
+            previous_node.next = None
+            self.tail = previous_node
+        # 두 노드 사이를 노드를 지울 떄
+        else:
+            previous_node.next = previous_node.next.next
+
+        return data
+
+    def prepend(self, data):
+        """링크드 리스트의 가장 앞에 데이터 삽입"""
+        new_node = Node(data)
+        if self.head is None:
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+
+        self.head = new_node
+
     def __str__(self):
         """링크드  리스트를 문자열로 표현해서 리턴하는 메소드"""
         res_str = "|"
@@ -90,3 +127,18 @@ my_list.find_node_at(2).data = 13
 
 print(my_list) # 전체 링크드 리스트 출력
 
+print("----- 삭 제 ------")
+my_list2 = LikedList()
+
+my_list2.append(2)
+my_list2.append(3)
+my_list2.append(5)
+my_list2.append(7)
+my_list2.append(11)
+
+print(my_list2)
+
+node2 = my_list2.find_node_at(2)
+print(my_list2.delete_after(node2))
+
+print(my_list2)
