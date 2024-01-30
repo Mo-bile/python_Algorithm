@@ -3,6 +3,7 @@ class Node:
     def __init__(self, data):
         self.data = data # 노드가 저장하는 데이터
         self.next = None # 다음 노드에 대한 레퍼런스
+        self.prev = None
 
 # 데이터가 2,3,5,7,11 을 담는 노드 인스턴스들 생성
 head_node =  Node(2)
@@ -45,33 +46,15 @@ class LikedList:
         """링크드 리스트 추가 연산 메소드"""
         new_node = Node(data)
 
+        # if는 싱글과 동일함
         if self.head is None: # 링크드 리스트가 비어 있는 경우
             self.head = new_node
             self.tail = new_node
         else: # 링크드 리스트가 비어 있지 않은 경우
             self.tail.next = new_node
+            new_node.prev = self.tail
             self.tail = new_node
 
-    def delete(self, node_to_delete):
-        """더블리 링크드 리스트 삭제 연산 메소드"""
-        # 하나만 있을 경우
-        # if self.head is self.tail:
-        if node_to_delete is self.head and node_to_delete is self.tail:
-            self.head = None
-            self.tail = None
-        # 가장 앞 노드 선택 -> head 제거
-        elif node_to_delete.prev is None:
-            self.head = self.head.next
-            self.head.prev = None
-        # 가장 끝 노드 선택 -> tail 제거
-        elif node_to_delete.next is None:
-            self.tail = self.tail.prev
-            self.tail.next = None
-        else:
-            node_to_delete.prev.next = node_to_delete.next
-            node_to_delete.next.prev = node_to_delete.prev
-
-        return node_to_delete.data
 
     def insert_after(self, previous_node, data):
         """링크드 리스트 주어진 노드 뒤 삽입 연산 메소드"""
@@ -135,32 +118,4 @@ my_list.append(5)
 my_list.append(7)
 my_list.append(11)
 
-# 링크드 리스트 출력
-iterator = head_node
-while iterator is not None:
-    print(iterator.data)
-    iterator = iterator.next
-
-print("-----------")
-# 링크드 리스트 노드에 접근 (데이터 가지고 오기)
-print(my_list.find_node_at(3).data)
-# 링크드 리스트 노드에 접근 (데이터 바꾸기)
-my_list.find_node_at(2).data = 13
-
-print(my_list) # 전체 링크드 리스트 출력
-
-print("----- 삭 제 ------")
-my_list2 = LikedList()
-
-my_list2.append(2)
-my_list2.append(3)
-my_list2.append(5)
-my_list2.append(7)
-my_list2.append(11)
-
-print(my_list2)
-
-node2 = my_list2.find_node_at(2)
-print(my_list2.delete_after(node2))
-
-print(my_list2)
+print(my_list)
