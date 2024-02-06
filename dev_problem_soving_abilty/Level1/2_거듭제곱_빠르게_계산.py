@@ -1,6 +1,12 @@
 def power(x, y):
-    # 여기에 코드를 작성하세요
+    #base case
+    if  y < 1:
+        return 1
 
+    #recursive case
+    x *= power(x , y - 2)
+
+    return x
 
 # 테스트 코드
 print(power(3, 5))
