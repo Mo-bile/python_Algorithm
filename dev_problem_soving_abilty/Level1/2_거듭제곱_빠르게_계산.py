@@ -11,7 +11,6 @@ def power(x, y):
 
 
 # 테스트 코드
-# print(power(3, 4))
 print(power(3, 5))
-# print(power(5, 6))
-# print(power(7, 9))
+print(power(5, 6))
+print(power(7, 9))
