@@ -1,7 +1,29 @@
-# 1.
-
 def select_stops(water_stops, capacity):
-    # 여기에 코드를 작성하세요
+    select_list = list()
+    select_list.append(water_stops[-1]) # 26
+    # limit_stop = capacity
+
+    for i in range(len(water_stops)):
+        now_stop = select_list[i] # 26
+        compare_list = list()
+        for j in range(len(water_stops) - 1):
+            next_stop_range = now_stop - capacity
+            # 26 - 4 = 22
+
+            stop_candidate = water_stops[-(j + 2)]
+            if stop_candidate >= next_stop_range:
+                compare_list.append(stop_candidate)
+
+        compare_list.sort()
+        if compare_list[0] == select_list[-1]:
+            break
+        if select_list[-1] - capacity <= 0:
+            break
+
+        select_list.append(compare_list[0])
+
+    return sorted(select_list)
+
 
 
 # 테스트 코드
