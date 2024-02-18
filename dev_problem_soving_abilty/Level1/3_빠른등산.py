@@ -1,28 +1,40 @@
 def select_stops(water_stops, capacity):
-    select_list = list()
-    select_list.append(water_stops[-1]) # 26
-    # limit_stop = capacity
-
+    sorted_list = []
+    current_stop = 0
     for i in range(len(water_stops)):
-        now_stop = select_list[i] # 26
-        compare_list = list()
-        for j in range(len(water_stops) - 1):
-            next_stop_range = now_stop - capacity
-            # 26 - 4 = 22
+        stop_capacity = water_stops[i] - capacity
+        if stop_capacity > current_stop:
+            sorted_list.append(water_stops[i - 1])
+            current_stop = water_stops[i - 1]
 
-            stop_candidate = water_stops[-(j + 2)]
-            if stop_candidate >= next_stop_range:
-                compare_list.append(stop_candidate)
+    sorted_list.append(water_stops[-1])
 
-        compare_list.sort()
-        if compare_list[0] == select_list[-1]:
-            break
-        if select_list[-1] - capacity <= 0:
-            break
+    return sorted_list
 
-        select_list.append(compare_list[0])
-
-    return sorted(select_list)
+    # select_list = list()
+    # select_list.append(water_stops[-1]) # 26
+    # # limit_stop = capacity
+    #
+    # for i in range(len(water_stops)):
+    #     now_stop = select_list[i] # 26
+    #     compare_list = list()
+    #     for j in range(len(water_stops) - 1):
+    #         next_stop_range = now_stop - capacity
+    #         # 26 - 4 = 22
+    #
+    #         stop_candidate = water_stops[-(j + 2)]
+    #         if stop_candidate >= next_stop_range:
+    #             compare_list.append(stop_candidate)
+    #
+    #     compare_list.sort()
+    #     if compare_list[0] == select_list[-1]:
+    #         break
+    #     if select_list[-1] - capacity <= 0:
+    #         break
+    #
+    #     select_list.append(compare_list[0])
+    #
+    # return sorted(select_list)
 
 
 
