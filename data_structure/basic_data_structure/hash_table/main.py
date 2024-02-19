@@ -1,6 +1,5 @@
 from HDLL import LinkedList  # 해시 테이블에서 사용할 링크드 리스트 임포트
 
-
 class HashTable:
     """해시 테이블 클래스"""
 
@@ -20,6 +19,9 @@ class HashTable:
         주어진 key에 해당하는 데이터를 리턴하는 메소드
         """
         # 코드를 쓰세요
+        hash = self._hash_function(key)
+        find = self._table[hash].find_node_with_key(key)
+        return find.value
 
     def insert(self, key, value):
         """
@@ -27,6 +29,15 @@ class HashTable:
         이미 해당 key에 저장된 데이터가 있으면 해당 key에 해당하는 데이터를 바꿔준다
         """
         # 코드를 쓰세요
+        hash = self._hash_function(key)
+
+        node_with_key = self._table[hash].find_node_with_key(key)
+
+        if node_with_key is not None:
+            self._table[hash].delete(node_with_key)
+
+        self._table[hash].append(key,value)
+
 
     def __str__(self):
         """해시 테이블 문자열 메소드"""
