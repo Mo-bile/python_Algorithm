@@ -49,28 +49,28 @@ class HashTable:
         return res_str[:-1]
 
 
-test_scores = HashTable(50)  # 시험 점수를 담을 해시 테이블 인스턴스 생성
-
-# 여러 학생들 이름과 시험 점수 삽입
-test_scores.insert("현승", 85)
-test_scores.insert("영훈", 90)
-test_scores.insert("동욱", 87)
-test_scores.insert("지웅", 99)
-test_scores.insert("신의", 88)
-test_scores.insert("규식", 97)
-test_scores.insert("태호", 90)
-
-print(test_scores)
-
-# key인 이름으로 특정 학생 시험 점수 검색
-print(test_scores.look_up_value("현승"))
-print(test_scores.look_up_value("태호"))
-print(test_scores.look_up_value("영훈"))
-
-# 학생들 시험 점수 수정
-test_scores.insert("현승", 10)
-test_scores.insert("태호", 20)
-test_scores.insert("영훈", 30)
+# test_scores = HashTable(50)  # 시험 점수를 담을 해시 테이블 인스턴스 생성
+#
+# # 여러 학생들 이름과 시험 점수 삽입
+# test_scores.insert("현승", 85)
+# test_scores.insert("영훈", 90)
+# test_scores.insert("동욱", 87)
+# test_scores.insert("지웅", 99)
+# test_scores.insert("신의", 88)
+# test_scores.insert("규식", 97)
+# test_scores.insert("태호", 90)
+#
+# print(test_scores)
+#
+# # key인 이름으로 특정 학생 시험 점수 검색
+# print(test_scores.look_up_value("현승"))
+# print(test_scores.look_up_value("태호"))
+# print(test_scores.look_up_value("영훈"))
+#
+# # 학생들 시험 점수 수정
+# test_scores.insert("현승", 10)
+# test_scores.insert("태호", 20)
+# test_scores.insert("영훈", 30)
 
 print("-------------------------")
 
@@ -90,7 +90,6 @@ class HashTable_best:
     def _get_linked_list_for_key(self, key):
         """주어진 key에 대응하는 인덱스에 저장된 링크드 리스트를 리턴하는 메소드"""
         hashed_index = self._hash_function(key)
-
         return self._table[hashed_index]
 
     def _look_up_node(self, key):
@@ -118,6 +117,14 @@ class HashTable_best:
             linked_list = self._get_linked_list_for_key(key)
             linked_list.append(key, value)
 
+    def delete_by_key(self, key):
+
+        node = self._look_up_node(key) # 예와 처리 신경쓰자!!
+
+        """주어진 key에 해당하는 key - value 쌍을 삭제하는 메소드"""
+        if node is not None:
+            self._get_linked_list_for_key(key).delete(node)
+
     def __str__(self):
         """해시 테이블 문자열 메소드"""
         res_str = ""
@@ -128,28 +135,50 @@ class HashTable_best:
         return res_str[:-1]
 
 
-print(test_scores)
-test_scores = HashTable_best(50) # 시험 점수를 담을 해시 테이블 인스턴스 생성
+# print(test_scores)
+# test_scores = HashTable_best(50) # 시험 점수를 담을 해시 테이블 인스턴스 생성
 
 # 여러 학생들 이름과 시험 점수 삽입
-test_scores.insert("현승", 85)
-test_scores.insert("영훈", 90)
-test_scores.insert("동욱", 87)
-test_scores.insert("지웅", 99)
-test_scores.insert("신의", 88)
-test_scores.insert("규식", 97)
-test_scores.insert("태호", 90)
+# test_scores.insert("현승", 85)
+# test_scores.insert("영훈", 90)
+# test_scores.insert("동욱", 87)
+# test_scores.insert("지웅", 99)
+# test_scores.insert("신의", 88)
+# test_scores.insert("규식", 97)
+# test_scores.insert("태호", 90)
+#
+# print(test_scores)
+#
+# # key인 이름으로 특정 학생 시험 점수 검색
+# print(test_scores.look_up_value("현승"))
+# print(test_scores.look_up_value("태호"))
+# print(test_scores.look_up_value("영훈"))
+#
+# # 학생들 시험 점수 수정
+# test_scores.insert("현승", 10)
+# test_scores.insert("태호", 20)
+# test_scores.insert("영훈", 30)
+#
+# print(test_scores)
 
-print(test_scores)
+print("-------------------------")
 
-# key인 이름으로 특정 학생 시험 점수 검색
-print(test_scores.look_up_value("현승"))
-print(test_scores.look_up_value("태호"))
-print(test_scores.look_up_value("영훈"))
+test_scores3 = HashTable_best(50) # 시험 점수를 담을 해시 테이블 인스턴스 생성
 
-# 학생들 시험 점수 수정
-test_scores.insert("현승", 10)
-test_scores.insert("태호", 20)
-test_scores.insert("영훈", 30)
+# 여러 학생들 이름과 시험 점수 삽입
+test_scores3.insert("현승", 85)
+test_scores3.insert("영훈", 90)
+test_scores3.insert("동욱", 87)
+test_scores3.insert("지웅", 99)
+test_scores3.insert("신의", 88)
+test_scores3.insert("규식", 97)
+test_scores3.insert("태호", 90)
 
-print(test_scores)
+# 학생들 시험 점수 삭제
+test_scores3.delete_by_key("태호")
+test_scores3.delete_by_key("지웅")
+test_scores3.delete_by_key("신의")
+test_scores3.delete_by_key("현승")
+test_scores3.delete_by_key("규식")
+
+print(test_scores3)
