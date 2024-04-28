@@ -20,7 +20,6 @@ def bfs(graph, start_node):
                 neighbor.visited = True
                 queue.append(neighbor)
 
-
 stations = create_station_graph("./new_stations.txt")  # stations.txt 파일로 그래프를 만든다
 gangnam_station = stations["강남"]
 
