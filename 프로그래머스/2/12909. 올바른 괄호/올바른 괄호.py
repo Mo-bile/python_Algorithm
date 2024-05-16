@@ -14,6 +14,6 @@ def solution(s):
                 
     if stack :
         answer = False;
-        
+    # return len(st) == 0 도 동일하게 가능
            
     return answer
