@@ -21,12 +21,6 @@ def solution(progresses, speeds):
             tmp = day
             count = 1
         
-        # if day > tmp :
-        #     answer.append(count)
-        #     tmp = day
-        #     count = 1
-        # else :
-        #     count += 1
     answer.append(count)
 
     return answer
