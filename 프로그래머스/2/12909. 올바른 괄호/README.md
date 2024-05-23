@@ -1,10 +1,10 @@
 # [level 2] 올바른 괄호 - 12909 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12909) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12909/) 
 
 ### 성능 요약
 
-메모리: 10.5 MB, 시간: 6.54 ms
+메모리: 10.3 MB, 시간: 6.42 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 05월 16일 23:39:56
+2024년 05월 23일 21:29:46
 
 ### 문제 설명
 
@@ -70,15 +70,3 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
-
-
-<div> 
-<h1>반성</h1>
-<ol>
-        <li>파이썬 함수가 약함 리스트 스택은 push()가 아니라 append()</li>
-        <li>List 존재 여부는 쉽게 if list 이런식으로 js처럼 할 수있음</li>
-        <li>구체적인 케이스를 명세해서 생각해보자!
-        <p>예로들어 스택 비어있거나, 있는데닫힌괄호 들어오는 각각의 경우 2개, 열린관호 들어오는경우</p>
-        </li>
-</ol>
-</div>

@@ -1,19 +1,18 @@
 def solution(s):
     answer = True
-    
     stack = []
-    
-    for char in s:
-        if char == '(':
-            stack.append(char)
+    for bracket in s:
+        if bracket == "(":
+            stack.append("(")
         else:
-            if stack:
+            if stack :
                 stack.pop()
-            else:
+            else :
                 answer = False
                 
     if stack :
-        answer = False;
-    # return len(st) == 0 도 동일하게 가능
-           
+        answer = False
+                
     return answer
+            
+            
