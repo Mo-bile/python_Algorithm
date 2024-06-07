@@ -7,9 +7,8 @@ class Solution:
             output[i][0] = 1
             output[i][-1] = 1
 
-            for j in range(1,i):
+            for j in range(1,i): # 0에서 1로 수정
                 if j != 0 or j != i:
                     output[i][j] = output[i-1][j-1] + output[i-1][j] 
         
         return output
-        
