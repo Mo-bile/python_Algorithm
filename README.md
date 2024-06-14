@@ -7,6 +7,7 @@
 |  |
 | ------- |
 | [0118-pascals-triangle](https://github.com/Mo-bile/python_Algorithm/tree/master/0118-pascals-triangle) |
+| [1572-subrectangle-queries](https://github.com/Mo-bile/python_Algorithm/tree/master/1572-subrectangle-queries) |
 # Dynamic Programming
 |  |
 | ------- |
@@ -34,3 +35,11 @@
 |  |
 | ------- |
 | [1086-divisor-game](https://github.com/Mo-bile/python_Algorithm/tree/master/1086-divisor-game) |
+# Design
+|  |
+| ------- |
+| [1572-subrectangle-queries](https://github.com/Mo-bile/python_Algorithm/tree/master/1572-subrectangle-queries) |
+# Matrix
+|  |
+| ------- |
+| [1572-subrectangle-queries](https://github.com/Mo-bile/python_Algorithm/tree/master/1572-subrectangle-queries) |
