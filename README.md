@@ -8,6 +8,7 @@
 | ------- |
 | [0118-pascals-triangle](https://github.com/Mo-bile/python_Algorithm/tree/master/0118-pascals-triangle) |
 | [1572-subrectangle-queries](https://github.com/Mo-bile/python_Algorithm/tree/master/1572-subrectangle-queries) |
+| [1651-shuffle-string](https://github.com/Mo-bile/python_Algorithm/tree/master/1651-shuffle-string) |
 # Dynamic Programming
 |  |
 | ------- |
@@ -43,3 +44,7 @@
 |  |
 | ------- |
 | [1572-subrectangle-queries](https://github.com/Mo-bile/python_Algorithm/tree/master/1572-subrectangle-queries) |
+# String
+|  |
+| ------- |
+| [1651-shuffle-string](https://github.com/Mo-bile/python_Algorithm/tree/master/1651-shuffle-string) |
