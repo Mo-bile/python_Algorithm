@@ -1,18 +1,22 @@
 def solution(s):
-    answer = True
-    stack = []
-    for bracket in s:
-        if bracket == "(":
-            stack.append("(")
-        else:
-            if stack :
-                stack.pop()
-            else :
-                answer = False
-                
-    if stack :
-        answer = False
-                
-    return answer
+    buffer = []
+    
+    for i in range(len(s)):
+        if i == 0 and s[i] == ')':
+            return False
+        
+        if s[i] == '(' :
+            buffer.append('(')
+        else :
+            if len(buffer) == 0:
+                return False
+            else:
+                buffer.pop()
+            
+    if len(buffer) == 0:
+        return True
+    else :
+        return False
+
             
             
