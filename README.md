@@ -48,3 +48,18 @@
 |  |
 | ------- |
 | [1651-shuffle-string](https://github.com/Mo-bile/python_Algorithm/tree/master/1651-shuffle-string) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
+## Sorting
+|  |
+| ------- |
+| [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
+<!---LeetCode Topics End-->
