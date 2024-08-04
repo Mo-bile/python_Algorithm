@@ -66,6 +66,7 @@
 ## Tree
 |  |
 | ------- |
+| [0101-symmetric-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0101-symmetric-tree) |
 | [0783-search-in-a-binary-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0783-search-in-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Mo-bile/python_Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Design
@@ -80,10 +81,19 @@
 ## Binary Tree
 |  |
 | ------- |
+| [0101-symmetric-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0101-symmetric-tree) |
 | [0783-search-in-a-binary-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0783-search-in-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Mo-bile/python_Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Data Stream
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Mo-bile/python_Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
+## Depth-First Search
+|  |
+| ------- |
+| [0101-symmetric-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0101-symmetric-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0101-symmetric-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0101-symmetric-tree) |
 <!---LeetCode Topics End-->
