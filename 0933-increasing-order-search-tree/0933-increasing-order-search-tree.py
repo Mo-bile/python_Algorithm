@@ -10,7 +10,7 @@ class Solution:
         def inorder_tree(root, list):
             if root is not None:
                 inorder_tree(root.left, list)
-                # list.append(root.val)
+                # list.append(root.val) #node 값이 아니라 node 자체
                 list.append(root)
                 inorder_tree(root.right, list)
             return list
