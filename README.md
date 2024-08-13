@@ -53,6 +53,7 @@
 ## Array
 |  |
 | ------- |
+| [0119-pascals-triangle-ii](https://github.com/Mo-bile/python_Algorithm/tree/master/0119-pascals-triangle-ii) |
 | [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
 ## Sorting
 |  |
@@ -108,4 +109,8 @@
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Mo-bile/python_Algorithm/tree/master/0094-binary-tree-inorder-traversal) |
 | [0933-increasing-order-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0933-increasing-order-search-tree) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0119-pascals-triangle-ii](https://github.com/Mo-bile/python_Algorithm/tree/master/0119-pascals-triangle-ii) |
 <!---LeetCode Topics End-->
