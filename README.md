@@ -55,10 +55,12 @@
 | ------- |
 | [0119-pascals-triangle-ii](https://github.com/Mo-bile/python_Algorithm/tree/master/0119-pascals-triangle-ii) |
 | [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
+| [0561-array-partition](https://github.com/Mo-bile/python_Algorithm/tree/master/0561-array-partition) |
 ## Sorting
 |  |
 | ------- |
 | [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
+| [0561-array-partition](https://github.com/Mo-bile/python_Algorithm/tree/master/0561-array-partition) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -113,4 +115,12 @@
 |  |
 | ------- |
 | [0119-pascals-triangle-ii](https://github.com/Mo-bile/python_Algorithm/tree/master/0119-pascals-triangle-ii) |
+## Greedy
+|  |
+| ------- |
+| [0561-array-partition](https://github.com/Mo-bile/python_Algorithm/tree/master/0561-array-partition) |
+## Counting Sort
+|  |
+| ------- |
+| [0561-array-partition](https://github.com/Mo-bile/python_Algorithm/tree/master/0561-array-partition) |
 <!---LeetCode Topics End-->
