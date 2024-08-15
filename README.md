@@ -123,4 +123,8 @@
 |  |
 | ------- |
 | [0561-array-partition](https://github.com/Mo-bile/python_Algorithm/tree/master/0561-array-partition) |
+## Graph
+|  |
+| ------- |
+| [1916-find-center-of-star-graph](https://github.com/Mo-bile/python_Algorithm/tree/master/1916-find-center-of-star-graph) |
 <!---LeetCode Topics End-->
