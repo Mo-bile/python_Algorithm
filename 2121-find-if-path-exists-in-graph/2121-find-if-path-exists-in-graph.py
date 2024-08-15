@@ -4,6 +4,7 @@ class Solution:
         # 2. DFS 사용
         def dfs(graph, start_node, end_node):
 
+            # DFS 위한 스택과 방문관련 set선언
             stack = deque()
             visited = set()
             
@@ -13,9 +14,11 @@ class Solution:
             while stack:
                 node = stack.pop()
                 for val in graph[node]:
+                    # 이미 방문했는지 체크
                     if val in visited:
                         continue
 
+                    # 목적지인지 체크
                     if val == end_node:
                         return True
                     stack.append(val)
@@ -31,7 +34,3 @@ class Solution:
         
         print(adj_list)
         return dfs(adj_list, source, destination)
-
-        # 3. 방문기록
-
-        # 4. 종료조건
