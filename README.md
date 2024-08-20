@@ -84,6 +84,7 @@
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/Mo-bile/python_Algorithm/tree/master/0268-missing-number) |
+| [0441-arranging-coins](https://github.com/Mo-bile/python_Algorithm/tree/master/0441-arranging-coins) |
 | [0783-search-in-a-binary-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0783-search-in-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Mo-bile/python_Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0933-increasing-order-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0933-increasing-order-search-tree) |
@@ -145,6 +146,7 @@
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/Mo-bile/python_Algorithm/tree/master/0268-missing-number) |
+| [0441-arranging-coins](https://github.com/Mo-bile/python_Algorithm/tree/master/0441-arranging-coins) |
 ## Bit Manipulation
 |  |
 | ------- |
