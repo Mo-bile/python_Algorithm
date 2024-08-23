@@ -76,6 +76,7 @@
 | [0783-search-in-a-binary-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0783-search-in-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Mo-bile/python_Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0933-increasing-order-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0933-increasing-order-search-tree) |
+| [1653-number-of-good-leaf-nodes-pairs](https://github.com/Mo-bile/python_Algorithm/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 ## Design
 |  |
 | ------- |
@@ -96,6 +97,7 @@
 | [0783-search-in-a-binary-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0783-search-in-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Mo-bile/python_Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0933-increasing-order-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0933-increasing-order-search-tree) |
+| [1653-number-of-good-leaf-nodes-pairs](https://github.com/Mo-bile/python_Algorithm/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 ## Data Stream
 |  |
 | ------- |
@@ -106,6 +108,7 @@
 | [0094-binary-tree-inorder-traversal](https://github.com/Mo-bile/python_Algorithm/tree/master/0094-binary-tree-inorder-traversal) |
 | [0101-symmetric-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0101-symmetric-tree) |
 | [0933-increasing-order-search-tree](https://github.com/Mo-bile/python_Algorithm/tree/master/0933-increasing-order-search-tree) |
+| [1653-number-of-good-leaf-nodes-pairs](https://github.com/Mo-bile/python_Algorithm/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Mo-bile/python_Algorithm/tree/master/2121-find-if-path-exists-in-graph) |
 ## Breadth-First Search
 |  |
