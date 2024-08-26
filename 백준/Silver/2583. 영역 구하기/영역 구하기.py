@@ -1,63 +1,74 @@
-def adj_list(M, N, square_areas):
-    adj = [[0 for col in range(N)] for row in range(M)]
-    while square_areas :
-        square_area = square_areas.pop()
-        x1 = square_area[0]
-        y1 = square_area[1]
-        x2 = square_area[2]
-        y2 = square_area[3]
+# 복습용 버전 2
+# 입력
+# 첫째 줄에 M과 N, 그리고 K가 빈칸을 사이에 두고 차례로 주어진다. M, N, K는 모두 100 이하의 자연수이다.
+# 둘째 줄부터 K개의 줄에는 한 줄에 하나씩 직사각형의 왼쪽 아래 꼭짓점의 x, y좌표값과 오른쪽 위 꼭짓점의 x, y좌표값이
+# 빈칸을 사이에 두고 차례로 주어진다. 모눈종이의 왼쪽 아래 꼭짓점의 좌표는 (0,0)이고, 오른쪽 위 꼭짓점의 좌표는(N,M)이다.
+# 입력되는 K개의 직사각형들이 모눈종이 전체를 채우는 경우는 없다.
+#
+# 5 7 3
+# 0 2 4 4
+# 1 1 2 5
+# 4 0 6 2
+#
+# 출력
+# 첫째 줄에 분리되어 나누어지는 영역의 개수를 출력한다.
+# 둘째 줄에는 각 영역의 넓이를 오름차순으로 정렬하여 빈칸을 사이에 두고 출력한다.
+def fill_square(M, N, square):
 
-        for row in range(M):
-            for col in range(N):
-                # 조건에서 착각함
-                if y1 <= row < y2 and x1 <= col < x2:
-                    adj[row][col] = 1
-    return adj
+    area = [[0 for x in range(N)] for y in range(M)]
 
-def find_area(grid, M, N):
-    area_count = 0
-    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+    for x1,y1,x2,y2 in square:
+        for y in range(y1, y2):
+            for x in range(x1, x2):
+                area[y][x] = 1
 
-    def dfs(grid, row, col):
-        stack = [(row, col)]
-        area_size = 0
+    return area
+
+def find_area(M, N, adj_list):
+    directions = [(0,1),(0,-1),(1,0),(-1,0)]
+
+    def dfs(y,x,grid):
+        size = 0
+        stack = [(y,x)]
 
         while stack:
             cy, cx = stack.pop()
+
             if grid[cy][cx] == 1:
                 continue
-
             grid[cy][cx] = 1
-            area_size += 1
+            size += 1
+
             for dy, dx in directions:
                 ny, nx = cy + dy, cx + dx
-                if (0 <= ny < M) and (0 <= nx < N) and (grid[ny][nx] == 0):
+                # 아래 조건문 부분 빠트림
+                if (0 <= ny < M) and (0 <= nx < N) and (grid[ny][nx] == 0): 
                     stack.append((ny,nx))
-        return area_size
 
-    # print(grid)
-    area_sizes = []
-    for row in range(M):
-        for col in range(N):
-            if grid[row][col] == 0:
-                area_count += 1
-                # print(grid)
-                area_size = dfs(grid, row, col)
-                area_sizes.append(area_size)
-    return area_count, area_sizes
+        return size
+
+    result = []
+    for y in range(M):
+        for x in range(N):
+            if adj_list[y][x] == 0:
+                size = dfs(y, x, adj_list)
+                result.append(size)
+    result.sort()
+    return len(result), result
+
 
 if __name__ == "__main__":
-
+    # M 은 y / N 은 x
     M, N, K = map(int, input().split())
-    square_area = []
+
+    square = []
     for _ in range(K):
-        square_area.append(list(map(int, input().split())))
+        square.append(list(map(int, input().split())))
 
-    adj = adj_list(M,N,square_area)
-    result, sizes = find_area(adj,M,N)
-    sizes.sort()
-    sizes = list(map(str, sizes))
-    text = ' '.join(sizes)
+    adj_list = fill_square(M,N,square)
 
-    print(result)
-    print(text)
+    count, sizes = find_area(M,N,adj_list)
+    print(count)
+    result = map(str, sizes)
+    a = ' '.join(result)
+    print(a)
