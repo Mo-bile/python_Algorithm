@@ -10,7 +10,6 @@ class Solution:
                 s_hash[c] += 1
         print(s_hash)
         odd_found = False
-        # s_hash = dict(sorted(s_hash.items(), key=lambda item: item[1]))
 
         count = 0
         odd_found = False
@@ -25,6 +24,28 @@ class Solution:
         if odd_found:
             count += 1  # 홀수가 하나라도 있으면 중앙에 하나를 추가 가능
         return count
+
+# 2번째 방식
+        # s_hash = dict(sorted(s_hash.items(), key=lambda item: item[1]))
+
+        # count = 0
+        # for key, value in s_hash.items():
+        #     # if len(s_hash) == 1:
+        #     #     count += s_hash[key]
+        #     #     return count
+
+        #     if value == 1 and count == 0:
+        #         count += 1
+        #     elif value != 1:
+        #         if value % 2 == 1 : #홀수이면
+        #             value -= 1
+        #             odd_found = True  # 홀수가 있음을 표시
+        #         count += value
+                
+
+        # if odd_found:
+        #         count += 1  # 홀수가 하나라도 있으면 중앙에 하나를 추가 가능
+        # return count
 
 # 직접 값을 입력하는 방식
         # string = deque()
