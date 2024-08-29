@@ -5,7 +5,6 @@ class Solution:
         print(s)
         print(g)
         output = 0
-
         g_index = 0
         s_index = 0
 
