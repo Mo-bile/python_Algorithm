@@ -11,7 +11,7 @@ class Solution:
             dp[i] = cost[i] + min(dp[i-1], dp[i-2])
             i += 1
 
-        output = min(dp[i - 1], dp[i - 2])
+        output = min(dp[len(cost) - 1], dp[len(cost) - 2])
         return output
         
     # 그리디 방법
