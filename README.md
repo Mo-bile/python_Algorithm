@@ -128,6 +128,7 @@
 | ------- |
 | [0119-pascals-triangle-ii](https://github.com/Mo-bile/python_Algorithm/tree/master/0119-pascals-triangle-ii) |
 | [0747-min-cost-climbing-stairs](https://github.com/Mo-bile/python_Algorithm/tree/master/0747-min-cost-climbing-stairs) |
+| [1236-n-th-tribonacci-number](https://github.com/Mo-bile/python_Algorithm/tree/master/1236-n-th-tribonacci-number) |
 ## Greedy
 |  |
 | ------- |
@@ -157,6 +158,7 @@
 | ------- |
 | [0268-missing-number](https://github.com/Mo-bile/python_Algorithm/tree/master/0268-missing-number) |
 | [0441-arranging-coins](https://github.com/Mo-bile/python_Algorithm/tree/master/0441-arranging-coins) |
+| [1236-n-th-tribonacci-number](https://github.com/Mo-bile/python_Algorithm/tree/master/1236-n-th-tribonacci-number) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -169,4 +171,8 @@
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/Mo-bile/python_Algorithm/tree/master/0455-assign-cookies) |
+## Memoization
+|  |
+| ------- |
+| [1236-n-th-tribonacci-number](https://github.com/Mo-bile/python_Algorithm/tree/master/1236-n-th-tribonacci-number) |
 <!---LeetCode Topics End-->
