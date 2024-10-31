@@ -21,3 +21,4 @@ def solution(s):
 
 # 1. 이 문제는 운이좋겠도 인덱스와 숫자가 동일해서 list로 해도 충분이 가능함
 # 2. replace()로 충분히 가능함
+# 3. defaultdict 도 한번 살펴보자!
