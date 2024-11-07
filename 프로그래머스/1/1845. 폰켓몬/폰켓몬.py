@@ -1,13 +1,8 @@
-def solution(nums):
-    dic = {}
-    
-    for n in nums:
-        if n in dic:
-            dic[n] += 1
-        else :
-            dic[n] = 1
+from collections import Counter
 
-    if len(dic) > len(nums) / 2:
-        return len(nums) / 2
-    else : 
-        return len(dic)
+def solution(nums):
+    counter = Counter(nums)  
+    answer = min(len(counter), len(nums) // 2)    
+    
+    
+    return answer
