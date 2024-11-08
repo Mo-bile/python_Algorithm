@@ -1,21 +1,18 @@
+from collections import Counter
+
 def solution(participant, completion):
-    value = {}
-    for p in participant:
-        if value.get(p, 0) == 0:
-            value[p] = 1
-        else :
-            value[p] += 1
     
-    for c in completion:
-        if value.get(c, 0) == 0:
-            value[c] += 0
-            
-        else :
-            value[c] -= 1
+    remaining = Counter(participant) - Counter(completion)
+    # print(list(remaining.keys())[0])
+    answer = str(list(remaining.keys())[0])
+    return answer
+#     ps = Counter(participant)
+#     cs = Counter(completion)
     
+#     for p in ps:
+#         if p in cs:
+#             ps[p] -= 1
     
-    for k, v in value.items():
-        if v != 0 :
-            return k
-        
-        
+#     for k, v in ps.items():
+#         if v != 0 :
+#             return k
