@@ -60,6 +60,7 @@
 | [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
 | [0561-array-partition](https://github.com/Mo-bile/python_Algorithm/tree/master/0561-array-partition) |
 | [0747-min-cost-climbing-stairs](https://github.com/Mo-bile/python_Algorithm/tree/master/0747-min-cost-climbing-stairs) |
+| [2692-take-gifts-from-the-richest-pile](https://github.com/Mo-bile/python_Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 ## Sorting
 |  |
 | ------- |
@@ -72,6 +73,7 @@
 | ------- |
 | [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Mo-bile/python_Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2692-take-gifts-from-the-richest-pile](https://github.com/Mo-bile/python_Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 ## Tree
 |  |
 | ------- |
@@ -177,4 +179,8 @@
 |  |
 | ------- |
 | [1236-n-th-tribonacci-number](https://github.com/Mo-bile/python_Algorithm/tree/master/1236-n-th-tribonacci-number) |
+## Simulation
+|  |
+| ------- |
+| [2692-take-gifts-from-the-richest-pile](https://github.com/Mo-bile/python_Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 <!---LeetCode Topics End-->
