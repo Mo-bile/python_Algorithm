@@ -1,23 +1,21 @@
 import heapq
-
-def solution(scoville, K):
-    answer = 0
+def solution(scoville, K):    
+    count = 0
+    # 1. scoville 을 heapify
     heapq.heapify(scoville)
     
-    while scoville[0] < K: # 가장 적은 스코빌 지수가 K보다 작을 때 까지 반복
-        
-        if len(scoville) < 2 :
-            return -1
-        
-        least_value = heapq.heappop(scoville)
-        less_value = heapq.heappop(scoville)
-        mixed = least_value + (less_value * 2)
-        
-        # 문제 잘못이해 "모든 음식이 K이상일 때 임"
-        # if mixed >= K :
-            # break;
-        # else :
-        heapq.heappush(scoville, mixed)
-        answer += 1
+    # 2. while 반복문 "scoville최솟값[0]" <= "K" 일때 True
+    while scoville[0] < K:
+        if len(scoville) <= 1:
+            count = -1
+            break    
+        # 2-1. heappop 두번
+        least = heapq.heappop(scoville)
+        pre_least = heapq.heappop(scoville)
+        # 2-2. 두개 값 연산 (최저 + (두번째 최저 * 2))
+        new_scoville = least + (pre_least * 2)
+        # 2-3. heappush
+        heapq.heappush(scoville, new_scoville) # 늘 무조건 push 되어야함
+        count += 1
             
-    return answer
+    return count
