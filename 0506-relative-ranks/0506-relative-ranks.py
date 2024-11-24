@@ -1,48 +1,24 @@
-import heapq
-
 class Solution:
     def findRelativeRanks(self, score: List[int]) -> List[str]:
-
-        heap = []
-        answer = [""] * len(score)
-
+        tuple_list = []
+        # 1. 메달별 tuple 정렬
         for i in range(len(score)):
-            heapq.heappush(heap, (-score[i],i))
+            tuple_list.append((i, score[i]))
+        tuple_list.sort(key = lambda x : x[1], reverse = True)
         
-        # i = 0
-        # for h in (heap) :
-            # poped_tuple = h
-        for i in range(len(score)):
-            poped_tuple = heapq.heappop(heap)
+        # 2. 크기만큼 미리 정렬
+        output = [0 for i in range(len(score))]
 
+        # 3. tupe 방식에 따라 재정렬
+        for i in range(len(score)):
+            medal = ""
             if i == 0:
-                answer[poped_tuple[1]] = "Gold Medal"
+                medal = "Gold Medal"
             elif i == 1:
-                answer[poped_tuple[1]] = "Silver Medal"
+                medal = "Silver Medal"
             elif i == 2:
-                answer[poped_tuple[1]] = "Bronze Medal"
+                medal = "Bronze Medal"
             else:
-                answer[poped_tuple[1]] = str(i + 1)
-            # i += 1
-            
-
-        return answer
-
-    
-
-        # stroed_score = score
-        # score.sort(reverse=True)
-        # dic = {}
-
-        # for i in range(len(score)):
-        #     if i == 0:
-        #         dic[score[i]] = "Gold Medal"
-        #     elif i == 1:
-        #         dic[score[i]] = "Silver Medal"
-        #     elif i == 2:
-        #         dic[score[i]] = "Bronze Medal"
-        #     else :
-        #         dic[score[i]] = str(i + 1)
-        
-
-        # return dic
+                medal = str(i + 1)
+            output[tuple_list[i][0]] = medal
+        return output
