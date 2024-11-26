@@ -69,12 +69,14 @@
 | [0455-assign-cookies](https://github.com/Mo-bile/python_Algorithm/tree/master/0455-assign-cookies) |
 | [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
 | [0561-array-partition](https://github.com/Mo-bile/python_Algorithm/tree/master/0561-array-partition) |
+| [2327-largest-number-after-digit-swaps-by-parity](https://github.com/Mo-bile/python_Algorithm/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2585-delete-greatest-value-in-each-row](https://github.com/Mo-bile/python_Algorithm/tree/master/2585-delete-greatest-value-in-each-row) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0506-relative-ranks](https://github.com/Mo-bile/python_Algorithm/tree/master/0506-relative-ranks) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Mo-bile/python_Algorithm/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2327-largest-number-after-digit-swaps-by-parity](https://github.com/Mo-bile/python_Algorithm/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2585-delete-greatest-value-in-each-row](https://github.com/Mo-bile/python_Algorithm/tree/master/2585-delete-greatest-value-in-each-row) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/Mo-bile/python_Algorithm/tree/master/2692-take-gifts-from-the-richest-pile) |
 ## Tree
