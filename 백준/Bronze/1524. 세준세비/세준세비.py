@@ -17,8 +17,8 @@ for _ in range(games):
             m_army = Bm_armies.pop()
 
     if Jn_armies:
-        # sys.stdout.write("\nS")
-        print("S")
+        sys.stdout.write("S\n")
+        # print("S")
     elif Bm_armies:
-        # sys.stdout.write("B")
-        print("B")
+        sys.stdout.write("B\n")
+        # print("B")
